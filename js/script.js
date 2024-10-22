@@ -9,12 +9,18 @@ fetch('footer.html')
 .then(data => {
   document.getElementById('footer').innerHTML = data;
 });
-
-
 document.getElementById('quiz').addEventListener('click', function() {
   alert('Quiz is under development');
 });
 document.getElementById('learn').addEventListener('click', function() {
+  alert('Resource page is under development');
+});
+
+
+document.getElementById('book').addEventListener('click', function() {
+  alert('Quiz is under development');
+});
+document.getElementById('doc-learn').addEventListener('click', function() {
   alert('Resource page is under development');
 });
 
@@ -57,5 +63,21 @@ function searchDoctor() {
   });
 }
 
+
+function searchCommunities() {
+  const searchQuery = document.getElementById('searchBar-section').value.toLowerCase();
+  const CommunityCards = document.querySelectorAll('.card');
+  
+  CommunityCards.forEach(card => {
+    const communityName = card.querySelector('h3').innerText.toLowerCase();
+    
+  
+    if (communityName.includes(searchQuery)) {
+      card.style.display = "block"; 
+    } else {
+      card.style.display = "none"; 
+    }
+  });
+};
 
 
