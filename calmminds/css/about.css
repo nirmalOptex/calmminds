@@ -1,0 +1,76 @@
+
+table, th, td {
+    border: 0px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    border-bottom: 3px solid black;
+  }
+  .desc{width: 50%;
+  height: 150px;
+  font-size: medium;
+  padding: 150px;
+  }
+  .Vision{
+    font-size: 3rem;
+    font-weight: bolder;
+    
+  }
+  .mission{
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+  .message{
+    font-size: 3rem;
+    font-weight: bolder; 
+    padding: 130px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #0dff55;
+    color: white;
+    border-radius: 24px;
+    cursor: pointer;
+  
+  }
+  
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 400px; /* Full width */
+  padding: 10px 10px; /* Spacing inside the input fields */
+  font-size: 1rem; /* Consistent font size *
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  margin: 10px;
+}
+
+.submit{
+  width: 200px;
+  border-radius: 15px;
+  margin: 10px;
+  margin-bottom: 50px;
+  font-weight: bolder;
+  
+}
+.submit:hover{
+  color: black;
+  
+  border-radius: 0px;
+}
+
+.about-form{
+  margin-bottom: 50px;
+  background-color: white;
+  padding: 50px;
+  margin: 50px;
+  width: 480px;
+  height: 370px;
+  border-radius: 25px;
+  text-align: left;
+}
+
+label{
+ margin-left: 10px;
+}

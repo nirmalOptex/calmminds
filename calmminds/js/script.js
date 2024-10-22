@@ -11,6 +11,12 @@ fetch('footer.html')
 });
 
 
+document.getElementById('quiz').addEventListener('click', function() {
+  alert('Quiz is under development');
+});
+document.getElementById('learn').addEventListener('click', function() {
+  alert('Resource page is under development');
+});
 
 
 const slide = document.querySelector('.carousel-slide');
@@ -30,35 +36,26 @@ function moveSlide(n) {
 }
 
 
-// service page
-// Alert when the user clicks on the quiz button
-// document.querySelector('.quiz-btn').addEventListener('click', () => {
-//     alert('Quiz functionality is under development!');
-//   });
-  
-//   // Alert when joining a community
-//   const joinButtons = document.querySelectorAll('.join-btn');
-//   joinButtons.forEach(button => {
-//     button.addEventListener('click', () => {
-//       alert('Thank you for joining!');
-//     });
-//   });
 
-  
-// Hamburger menu toggle
 
-  
-document.addEventListener('DOMContentLoaded', function () {
-  
-const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('nav-links');
-  if (hamburger && navLinks) {
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
-    });
-  }
-});
+//docctor page
 
+
+function searchDoctor() {
+  const searchQuery = document.getElementById('searchBar').value.toLowerCase();
+  const doctorCards = document.querySelectorAll('.card');
+  
+  doctorCards.forEach(card => {
+    const doctorName = card.querySelector('h3').innerText.toLowerCase();
+    
+    // If the doctor's name includes the search term, show the card; otherwise, hide it.
+    if (doctorName.includes(searchQuery)) {
+      card.style.display = "block"; // Show card
+    } else {
+      card.style.display = "none"; // Hide card
+    }
+  });
+}
 
 
 

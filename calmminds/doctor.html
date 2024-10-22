@@ -4,171 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Therapist</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/global.css" />
     <link rel="icon" type="image/x-icon" href="images\logo.png" />
-    <!-- <link rel="stylesheet" href="css/style.css" /> -->
-    <style> 
-      .cards {
-        /* justify-content: space-between; */
-        gap: 5rem;
-        margin-left: 10px;
-        margin-bottom: 40px;
-      }
-      .card {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        width: 350px;
-        /* text-align: left; */
-        height: 500px;
-        
-        /* display: flex; */
-        /* flex-direction: row; */
-      }
-      .card button {
-        height: 35px;
-        width: 105px;
-        /* padding: 10px 15px; */
-        border: none;
-        background-color: #81c784;
-        color: white;
-        border-radius: 5px;
-        cursor: pointer;
-        margin: 10px 0px 0px 0px ;
-        flex: initial;
-      }
-      
-      .card img {
-        width: 100%;
-        height: 50%;
-        object-fit: contain;
-      }
-      card h3 {
-  /* margin: 20px 0; */
-  color: #333;
-}
-.doctor-search-bar {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  margin: 100px;
-     
-}
-
-.doctor-search-bar input {
-  width: 500px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px 0 0 5px;
-}
-
-.doctor-search-bar button {
-  padding: 10px 15px;
-  border: none;
-  background-color: #ffa726;
-  color: white;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-}
-
-
-@media (max-width: 768px) {
-  .cards {
-    flex-direction: column;
-    align-items: center;
-    
-  }
-
-  .card {
-    width: 80%; /* Make cards take up more width */
-  }
-
-  .doctor-search-bar input {
-    width: 70%; /* Adjust search bar input width */
-  }
-}
-
-/* For Mobile Devices (480px and below) */
-@media (max-width: 480px) {
-  h1 {
-    font-size: 24px;
-  }
-
-  .doctor-search-bar input {
-    width: 300px; /* Full width input */
-    margin-bottom: 10px; /* Add spacing between input and button */
-    border-radius: 5px; /* Full rounded corners */
-  }
-
-  .doctor-search-bar button {
-    width: 60px; /* Full width button */
-    border-radius: 5px; /* Full rounded corners */
-  }
-
-  .card {
-    width: 90%; /* Smaller card width */
-  }
-
-  .card img {
-    height: 150px; /* Adjust image height */
-  }
-}
-h1
-{
-  margin-left: 100px;
-}
-    </style>
+    <link rel="stylesheet" href="css/doctor.css" />
+  
   </head>
   <body>
     <div id="navbar"></div>
 
     <div class="doctor-search-bar">
-      <input type="text" placeholder="Search for Doctor" />
-      <button>🔍</button>
+      <input type="text" id="searchBar" placeholder="Search for Doctor" />
+      <button onclick="searchDoctor()">🔍</button>
     </div>
-    <h1>Available doctor</h1><br>
-    <div class="cards">
+    <h1>Available Therapist</h1><br>
+    <div class="cards" id="doctorList">
         
       <div class="card">
-        <img src="images/img1.png" alt="Quiz Icon" />
-          <h3>Dr.Sandukh Ruit</h3>
+        <img src="https://republicaimg.nagariknewscdn.com/shared/web/uploads/media/SandukRuitPhoto_20190918175341.jpg" alt="Quiz Icon" />
+          
+        <div><h3>Dr.Sandukh Ruit</h3>
           <p>
             Take a short mental health quiz to gain insights and get feedback.
           </p>
           <div>
-          <button>Take Quiz</button>
-          <button>Take Quiz</button>
+          <button>Book an Appointment</button>
+          <button>Learn More</button>
+          </div>
         </div>
           
      
       </div>
       <div class="card">
-        <img src="images/img1.png" alt="Quiz Icon" />
+        <img src="https://images.unsplash.com/photo-1674049406176-021807a2802e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Quiz Icon" />
         <div>
-          <h3>Self-Assessment Quiz</h3>
+          <h3>Dr.Binod Chaudhari</h3>
           <p>
             Take a short mental health quiz to gain insights and get feedback.
           </p>
           <div>
-          <button>Take Quiz</button>
-          <button>Take Quiz</button>
+          <button>Book an Appointment</button>
+          <button>Learn More</button>
         </div>
           
         </div>
       </div>
       <div class="card">
-        <img src="images/img1.png" alt="Quiz Icon" />
+        <img src="https://pbs.twimg.com/media/EIGd3QrU0AApl4B.jpg" alt="Quiz Icon" />
         <div>
-          <h3>Self-Assessment Quiz</h3>
+          <h3>Dr.Sandukh Acharya</h3>
           <p>
             Take a short mental health quiz to gain insights and get feedback.
           </p>
       
-      <div>    <button>Take Quiz</button>
-          <button>Take Quiz</button>
+      <div>    <button>Book an Appointment</button>
+          <button>Learn More</button>
 </div>
           
         </div>
@@ -176,44 +65,44 @@ h1
     </div>
     <div class="cards">
       <div class="card">
-        <img src="images/img1.png" alt="Quiz Icon" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKG5T41tO5TdqjF65Er1DB5mlQZBN1d7xHAA&s" alt="Quiz Icon" />
         <div>
-          <h3>Self-Assessment Quiz</h3>
+          <h3>Dr.Trishala Gurung</h3>
           <p>
             Take a short mental health quiz to gain insights and get feedback.
           </p><div>
-          <button>Take Quiz</button>
-          <button>Take Quiz</button>
+          <button>Book an Appointment</button>
+          <button>Learn More</button>
 
         </div>
          
         </div>
       </div>
       <div class="card">
-        <img src="images/img1.png" alt="Quiz Icon" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSstaobUa5egnpH1LKAHx3YL8ssS0TBJOl46A&s" alt="Quiz Icon" />
         <div>
-          <h3>Self-Assessment Quiz</h3>
+          <h3>Dr.Prajina Pradhan</h3>
           <p>
             Take a short mental health quiz to gain insights and get feedback.
           </p>
           <div>
-            <button>Take Quiz</button>
+            <button>Book an Appointment</button>
         
-            <button>Take Quiz</button>
+            <button>Learn More</button>
         </div>
          
         </div>
       </div>
       <div class="card">
-        <img src="images/img1.png" alt="Quiz Icon" width="100%" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb-NGEQDekk2BwsllLjk4tcIM_BPIzXECdsg&s" alt="Quiz Icon" width="100%" />
         <div>
-          <h3>Self-Assessment Quiz</h3>
+          <h3>Dr.Srinkhala Khatiwada</h3>
           <p>
             Take a short mental health quiz to gain insights and get feedback.
           </p>
           <Div>
-          <button>Take Quiz</button>
-          <button>Take Quiz</button>
+          <button>Book an Appointment</button>
+          <button>Learn More</button>
 </Div>
          
         </div>

@@ -1,0 +1,66 @@
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    /* gap :20%; */
+    padding: 4rem 0;
+  }
+
+  .footer-title {
+    margin: 0;
+    margin-left: 5px;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #81c784;
+    color: white;
+    border-radius: 24px;
+    cursor: pointer;
+  
+  }
+  button:hover{
+    transition: background-color 0.3s;
+    background-color: #e67e00;
+  }
+.rights{
+    position:absolute;
+    bottom: 0px;
+   text-align: center;
+   margin-left: 800px;
+    
+  }
+  .logos{
+    margin-right: 100px;
+    gap: 50px;
+    /* width: 10px; */
+   
+  }
+
+  
+input[id="text"],
+input[type="email"],
+textarea {
+  width: 400px; /* Full width */
+  padding: 10px 10px; /* Spacing inside the input fields */
+  font-size: 1rem; /* Consistent font size *
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  margin: 10px;
+}

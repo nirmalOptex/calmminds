@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health Quiz</title>
+  <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h2>About Your Mental Health</h2>
+    <p>Your answers help us provide better information and support for people like you.</p>
+    
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+
+    <form id="quiz-form">
+      <!-- Page 1 -->
+      <div class="page" id="page1">
+        <h3>Question 1: I feel overwhelmingly sad at times</h3>
+        <div class="options">
+          <label><input type="radio" name="q1" value="1"> Strongly Disagree</label>
+          <label><input type="radio" name="q1" value="2"> Disagree</label>
+          <label><input type="radio" name="q1" value="3"> Neutral</label>
+          <label><input type="radio" name="q1" value="4"> Agree</label>
+          <label><input type="radio" name="q1" value="5"> Strongly Agree</label>
+        </div>
+
+        <h3>Question 2: I have trouble sleeping</h3>
+        <div class="options">
+          <label><input type="radio" name="q2" value="1"> Strongly Disagree</label>
+          <label><input type="radio" name="q2" value="2"> Disagree</label>
+          <label><input type="radio" name="q2" value="3"> Neutral</label>
+          <label><input type="radio" name="q2" value="4"> Agree</label>
+          <label><input type="radio" name="q2" value="5"> Strongly Agree</label>
+        </div>
+      </div>
+
+      <!-- Page 2 -->
+      <div class="page" id="page2">
+        <h3>Question 3: I experience sudden mood swings</h3>
+        <div class="options">
+          <label><input type="radio" name="q3" value="1"> Strongly Disagree</label>
+          <label><input type="radio" name="q3" value="2"> Disagree</label>
+          <label><input type="radio" name="q3" value="3"> Neutral</label>
+          <label><input type="radio" name="q3" value="4"> Agree</label>
+          <label><input type="radio" name="q3" value="5"> Strongly Agree</label>
+        </div>
+
+        <h3>Question 4: I feel anxious about little things</h3>
+        <div class="options">
+          <label><input type="radio" name="q4" value="1"> Strongly Disagree</label>
+          <label><input type="radio" name="q4" value="2"> Disagree</label>
+          <label><input type="radio" name="q4" value="3"> Neutral</label>
+          <label><input type="radio" name="q4" value="4"> Agree</label>
+          <label><input type="radio" name="q4" value="5"> Strongly Agree</label>
+        </div>
+      </div>
+
+      <!-- Page 3 -->
+      <div class="page" id="page3">
+        <h3>Question 5: I experience frequent headaches or body pains</h3>
+        <div class="options">
+          <label><input type="radio" name="q5" value="1"> Strongly Disagree</label>
+          <label><input type="radio" name="q5" value="2"> Disagree</label>
+          <label><input type="radio" name="q5" value="3"> Neutral</label>
+          <label><input type="radio" name="q5" value="4"> Agree</label>
+          <label><input type="radio" name="q5" value="5"> Strongly Agree</label>
+        </div>
+
+        <h3>Question 6: I have lost interest in activities I used to enjoy</h3>
+        <div class="options">
+          <label><input type="radio" name="q6" value="1"> Strongly Disagree</label>
+          <label><input type="radio" name="q6" value="2"> Disagree</label>
+          <label><input type="radio" name="q6" value="3"> Neutral</label>
+          <label><input type="radio" name="q6" value="4"> Agree</label>
+          <label><input type="radio" name="q6" value="5"> Strongly Agree</label>
+        </div>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="navigation-buttons">
+        <button type="button" id="previous" class="prev-btn">Previous</button>
+        <button type="button" id="next" class="next-btn">Next</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
