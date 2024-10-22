@@ -137,13 +137,10 @@ footer {
 /* Carousl 
   /*  */
 
-.carousel-container {
+carousel-container {
   position: relative;
-  width: 100vw; /* Full viewport width */
-  overflow: hidden; /* Ensures images stay inside the container */
-  max-width: 100%;  /* Ensure the carousel does not exceed 100% width */
-  margin: 0;        /* Remove any potential margins */
-  padding: 0;
+  width: 2920px;
+  overflow: hidden;
 }
 
 .carousel-slide {
@@ -155,7 +152,6 @@ footer {
   width: 100%;
   height: 100%;
 }
-
 .prev-btn,
 .next-btn {
   position: absolute;
