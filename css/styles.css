@@ -137,7 +137,7 @@ footer {
 /* Carousl 
   /*  */
 
-carousel-container {
+.carousel-container {
   position: relative;
   width: 2920px;
   overflow: hidden;
