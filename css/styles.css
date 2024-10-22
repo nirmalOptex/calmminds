@@ -137,22 +137,24 @@ footer {
 /* Carousl 
   /*  */
 
-.carousel-container {
+carousel-container {
   position: relative;
-  width: 2920px;
-  overflow: hidden;
+  width: 100vw; 
+  overflow: hidden; 
+  max-width: 100%;  
+  margin: 0;       
+  padding: 0;
 }
 
 .carousel-slide {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  width: 100%;
 }
-
 .carousel-slide img {
-  width: auto;
-  height: 400px;
+  width: 100%;
+  height: 100%;
 }
-
 .prev-btn,
 .next-btn {
   position: absolute;
