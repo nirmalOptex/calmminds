@@ -137,50 +137,6 @@ footer {
 /* Carousl 
   /*  */
 
-.carousel-container {
-  position: relative;
-  width: 100%;  /* Make sure it takes full width */
-  max-width: 100vw;  /* Limit it to the screen's width */
-  overflow: hidden;
-}
-
-.carousel-slide {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: 100%; /* Ensure the slide is 100% of the container */
-}
-
-.carousel-slide img {
-  width: 100%;  /* Each image will take up the full width */
-  height: auto; /* Maintain image aspect ratio */
-}
-
-.prev-btn,
-.next-btn {
-  position: absolute;
-  top: 40%;
-  transform: translateY(-50%);
-  background-color: rgba(189, 187, 187, 0.5);
-  color: white;
-  border: none;
-  padding: 15px;
-  cursor: pointer;
-  font-size: 24px;
-}
-
-.prev-btn {
-  left: 10px;
-}
-
-.next-btn {
-  right: 10px;
-}
-
-.prev-btn:hover,
-.next-btn:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
 
 @media (max-width:1200px) {
  
@@ -219,36 +175,6 @@ footer {
     text-align: center;
   }
 }
-
-/* Other Styles */
-.carousel-container {
-  overflow: hidden;
-}
-
-.carousel-slide {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel-slide img {
-  width: 100%;
-  height: 400px;
-}
-
-.prev-btn, .next-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;
-  color: white;
-  font-size: 24px;
-  cursor: pointer;
-  padding: 10px;
-}
-
-.prev-btn { left: 10px; }
-.next-btn { right: 10px; }
 
 footer {
   text-align: center;
