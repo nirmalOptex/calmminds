@@ -1,23 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
-    <nav>
-      <div class="logo">  <a href=""><img src="calmminds.png" alt="" width="70px" height="70px"></a></div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CalmMinds - Home</title>
+  <link rel="icon" type="image/x-icon" href="images\logo.png" />
+  <link rel="stylesheet" href="styles.css">
+  <div id="navbar"></div>
 
-        <div class="rectangle">
-        <ul>
-            <a href=""><li>Home</li></a>
-           <a href=""> <li>About</li></a>
-            <a href=""><li>Services</li></a>
-            <a href=""><li>Contact us</li> </a>   
-        </ul></div>
-    </nav>
+  <section class="carousel">
+    <div class="carousel-container">
+      <div class="carousel-slide">
+          <img src="images/Banner.png" alt="Image 1">
+          <img src="images/Banner.png" alt="Image 2">
+          <img src="images/Banner.png" alt="Image 3">
+          <img src="images/Banner.png" alt="Image 4">
+      </div>
+  </div>
+  <button class="prev-btn" onclick="moveSlide(-1)">❮</button>
+  <button class="next-btn" onclick="moveSlide(1)">❯</button>
+
+  </section>
+
+  <section class="quote-of-the-day">
+    <h2>Quote of the Day</h2>
+    <p>"We cannot solve problems with the kind of thinking we employed when we came up with them."</p>
+    <span>—Albert Einstein</span>
+  </section>
+<hr>
+  <div class="search-box">
+    <div class="search-area">
+      <input
+        type="text"
+        placeholder="Search for Therapist"
+        class="search-bar"
+      />
+      <button class="menu-icon">&#9776;</button>
+      <button class="search-icon">&#128269;</button>
+    </div>
+  </div>
+<hr>
+  <section class="quick-links">
+    <h2>Quick Links</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="images/img1.png" alt="Quiz Icon">
+        <div><h3>Self-Assessment Quiz</h3>
+        <p>Take a short mental health quiz to gain insights and get feedback.</p>
+        <button>Take Quiz</button></div>
+      </div>
+      <div class="card">
+        <img src="images/img2.png" alt="Resources Icon">
+        <div><h3>Study Resources</h3>
+        <p>Gain insights into mental health and well-being. Take a moment to explore and read!</p>
+        <button >Learn More</button></div>
+      </div>
+    </div>
+  </section>
+<hr>
+ <div id="footer"></div>
+  <script src="js/script.js"></script>
 </body>
 </html>

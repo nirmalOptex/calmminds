@@ -1,0 +1,409 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x:hidden;
+
+  padding-top: 80px;
+
+  background-color: #D2EAF2;
+
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #A6DCEF;
+  padding: 15px 1px;
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  z-index: 1000; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.logo {
+  flex-shrink: 0; 
+  width: 45px;
+  height: 40px;
+  margin-left: 20px;
+  bottom: 40px;
+  position: absolute;
+  
+   
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+}
+
+.nav-links-container {
+  flex-grow: 1000; 
+  display: flex;
+  justify-content: center;
+  margin-left: 155px;
+}
+
+.nav-links-button {
+  list-style-type: none;
+  display: flex;
+  gap: 15px; /* Space between the buttons */
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  /* position: ral; */
+}
+
+.nav-links-button a {
+  background-color: orange;
+  border-radius: 30px;
+  padding: 11px 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 30px; 
+  background-color: #ffa726;
+  padding: 10px 30px;
+  border-radius: 10px; 
+  margin: 0; height: 20px;
+  justify-content: center;
+
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+.nav-links-button a:hover {
+  background-color: #d4941d;
+  
+}
+
+.nav-links a:hover{
+ color: #00b2f3;
+ 
+}
+
+/* Quote of the Day */
+.quote-of-the-day {
+  background-color: #e3f2fd;
+  text-align: center;
+  padding: 20px;
+}
+
+.quote-of-the-day p {
+  font-style: italic;
+  color: #666;
+}
+
+.quote-of-the-day span {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Search Bar */
+
+.search-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #ffb865;
+  width: 60vw;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+
+.search-bar {
+  width: 100%;
+  height: 4vh;
+  font-size: 1.2em;
+  background-color: #ffb865;
+  border: none;
+  outline: none;
+  margin-left: 16px;
+}
+.search-area :hover{
+  border:none;
+}
+
+
+.search-icon,
+.menu-icon {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 12px;
+  border: black;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card:hover{
+  box-shadow: 0px 9px 12px rgba(255, 0, 0, 0.1);}
+
+/* Quick Links Section */
+.quick-links {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  
+}
+
+.card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+}
+
+.card img {
+
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  margin-right:15px ;
+  box-shadow: 0 4px 10px rgba(186, 100, 100, 0.1);
+  
+}
+
+.card h3 {
+  margin: 50px 0;
+  color: #333;
+}
+
+.card p {
+  color: #777;
+  font-size: 14px;
+}
+
+.card button {
+  height: 35px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #81c784;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 150px 0px 60px 90px ;
+}
+
+.card button:hover{ 
+  background-color: #11e91c;
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Carousl 
+  /*  */
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 400px;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background-color: rgba(189, 187, 187, 0.5);
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* <------------------------> */
+/* About page */
+
+table, th, td {
+  border: 0px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  border-bottom: 3px solid black;
+}
+.desc{width: 50%;
+height: 150px;
+font-size: medium;
+padding: 150px;
+}
+.Vision{
+  font-size: 3rem;
+  font-weight: bolder;
+  
+}
+.mission{
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.message{
+  font-size: 3rem;
+  font-weight: bolder; 
+  padding: 130px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #0dff55;
+  color: white;
+  border-radius: 24px;
+  cursor: pointer;
+
+}
+
+@media (max-width:1200px) {
+ 
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position:absolute;
+    right: 60px;
+  }
+.navbar{
+  height: 45px;
+  
+}
+
+  .nav-links {
+    display: none; /* Hide navbar links initially */
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #81c784;
+    padding: 10px 0;
+  }
+  .nav-links-button{
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex; /* Show links when hamburger is clicked */
+  }
+
+  .nav-links a {
+    padding: 15px;
+    text-align: center;
+  }
+}
+
+/* Other Styles */
+.carousel-container {
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 400px;
+}
+
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+.cards{
+  flex-direction: column;
+
+}
+.card{
+  width: 200px;
+  margin: auto;
+}
+.card button{
+  margin: auto;
+}}
