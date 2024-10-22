@@ -83,11 +83,11 @@ function searchquicklinks() {
 
 
 
-
 .then(response => response.text())
 .then(data => {
   document.getElementById('footer').innerHTML = data;
 });
+
 document.getElementById('quiz').addEventListener('click', function() {
   alert('Quiz is under development');
 });
