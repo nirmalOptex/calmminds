@@ -1,3 +1,5 @@
+
+
 fetch('navbar.html')
 .then(response => response.text())
 .then(data => {
@@ -15,32 +17,9 @@ document.getElementById('quiz').addEventListener('click', function() {
 document.getElementById('learn').addEventListener('click', function() {
   alert('Resource page is under development');
 });
-
-
-document.getElementById('book').addEventListener('click', function() {
-  alert('Quiz is under development');
+document.getElementById('sharenow').addEventListener('click', function() {
+  alert('Resource is under development');
 });
-document.getElementById('doc-learn').addEventListener('click', function() {
-  alert('Resource page is under development');
-});
-
-
-const slide = document.querySelector('.carousel-slide');
-const images = document.querySelectorAll('.carousel-slide img');
-
-let counter = 0;
-const size = images[0].clientWidth;
-
-function moveSlide(n) {
-    counter += n;
-    if (counter < 0) {
-        counter = images.length - 1;  
-    } else if (counter >= images.length) {
-        counter = 0;  
-    }
-    slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-}
-
 
 
 
@@ -79,5 +58,22 @@ function searchCommunities() {
     }
   });
 };
+
+function searchquicklinks() {
+  const searchlinks = document.getElementById('quicklinks-search').value.toLowerCase();
+  const quickCards = document.querySelectorAll('.card');
+  
+  quickCards.forEach(card => {
+    const quickName = card.querySelector('h3').innerText.toLowerCase();
+    
+  
+    if (quickName.includes(searchlinks)) {
+      card.style.display = ""; 
+    } else {
+      card.style.display = "none"; 
+    }
+  });
+};
+
 
 

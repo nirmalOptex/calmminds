@@ -136,26 +136,28 @@ footer {
 
 /* Carousl 
   /*  */
-
-carousel-container {
+.carousel-container {
   position: relative;
-  width: 2920px;
+  width: 100%;  /* Make sure it takes full width */
+  max-width: 100vw;  /* Limit it to the screen's width */
   overflow: hidden;
 }
 
 .carousel-slide {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 100%;
+  width: 100%; /* Ensure the slide is 100% of the container */
 }
+
 .carousel-slide img {
-  width: 100%;
-  height: 100%;
+  width: 100%;  /* Each image will take up the full width */
+  height: auto; /* Maintain image aspect ratio */
 }
+
 .prev-btn,
 .next-btn {
   position: absolute;
-  top: 30%;
+  top: 40%;
   transform: translateY(-50%);
   background-color: rgba(189, 187, 187, 0.5);
   color: white;
@@ -177,6 +179,7 @@ carousel-container {
 .next-btn:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+
 
 @media (max-width:1200px) {
  
@@ -263,3 +266,8 @@ footer {
 .card button{
   margin: auto;
 }}
+
+.card a{
+  text-decoration: none;
+  color: white;
+}
