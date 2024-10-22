@@ -6,11 +6,11 @@ fetch('navbar.html')
   document.getElementById('navbar').innerHTML = data;
 });
 
-fetch('footer.htmlfetch('navbar.html')
-.then(response => response.text())
-.then(data => {
-  document.getElementById('navbar').innerHTML = data;
-});
+// fetch('footer.htmlfetch('navbar.html')
+// .then(response => response.text())
+// .then(data => {
+//   document.getElementById('navbar').innerHTML = data;
+// });
 
 fetch('footer.html')
 .then(response => response.text())
@@ -83,10 +83,7 @@ function searchquicklinks() {
 
 
 
-.then(response => response.text())
-.then(data => {
-  document.getElementById('footer').innerHTML = data;
-});
+
 
 document.getElementById('quiz').addEventListener('click', function() {
   alert('Quiz is under development');
@@ -159,4 +156,37 @@ function searchCommunities() {
   });
 };
 
+//quiz 
+function calculateScore() {
+  const form = document.getElementById('quiz-form');
+  const resultDiv = document.getElementById('result');
+
+  // Initialize total score
+  let totalScore = 0;
+
+  // Get answers
+  const answers = form.querySelectorAll('input[type="radio"]:checked');
+  
+  if (answers.length < 3) {  // Make sure all questions are answered
+      resultDiv.textContent = "Please answer all the questions.";
+      return;
+  }
+
+  // Calculate the score based on the selected values
+  answers.forEach(answer => {
+      totalScore += parseInt(answer.value);
+  });
+
+  // Provide feedback based on the score
+  let feedback = '';
+  if (totalScore <= 6) {
+      feedback = "You seem to be doing well, but keep an eye on your mental health.";
+  } else if (totalScore <= 9) {
+      feedback = "You may be experiencing some stress or anxiety. Consider taking time to relax.";
+  } else {
+      feedback = "You seem to be experiencing significant mental health challenges. It might be helpful to seek support.";
+  }
+
+  resultDiv.textContent = `Your total score is: ${totalScore}. ${feedback}`;
+}
 

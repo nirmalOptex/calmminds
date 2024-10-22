@@ -1,102 +1,50 @@
-/* Basic styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f4ff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .quiz-container {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 600px;
-    text-align: center;
-  }
-  
-  h2 {
-    color: #333;
-  }
-  
-  p {
-    color: #666;
-  }
-  
-  /* Progress bar */
-  .progress-bar {
-    height: 5px;
-    background-color: #e0e0e0;
-    border-radius: 10px;
-    margin: 20px 0;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .progress {
-    height: 100%;
-    width: 0%; /* Updated by JS */
-    background-color: #6200ea;
-    border-radius: 10px;
-    transition: width 0.4s ease;
-  }
-  
-  /* Styling for questions and options */
-  .page {
-    display: none;
-  }
-  
-  .options {
-    display: flex;
-    justify-content: space-around;
-    margin: 10px 0;
-    flex-wrap: wrap;
-  }
-  
-  label {
-    display: block;
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 5px;
-    flex-basis: 48%;
-  }
-  
-  input[type="radio"] {
-    margin-right: 5px;
-  }
-  
-  .navigation-buttons {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .prev-btn, .next-btn {
-    background-color: #6200ea;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .prev-btn {
-    background-color: #e0e0e0;
-    color: #333;
-  }
-  
-  /* Responsive */
-  /* @media (max-width: 768px) {
-    .quiz-container {
-      width: 90%;
-    }
-  
-    .options label {
-      flex-basis: 100%;
-    }
-  } */
-  
+  font-family: Arial, sans-serif;
+  background-color: #A6DCEF;
+  padding: 20px;
+}
+
+.quiz-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+}
