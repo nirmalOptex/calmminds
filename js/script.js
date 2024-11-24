@@ -17,7 +17,7 @@ fetch('footer.html')
 .then(data => {
   document.getElementById('footer').innerHTML = data;
 });
-});
+
 document.getElementById('learn').addEventListener('click', function() {
   alert('Resource page is under development');
 });
